@@ -1,0 +1,12 @@
+VGG/data/cifar-10-python.tar.gz
+*.tar.gz
+*.zip
+*.h5
+*.log
+data/
+VGG/data/cifar-10-python.tar.gz
+*.tar.gz
+*.zip
+*.h5
+*.log
+data/
