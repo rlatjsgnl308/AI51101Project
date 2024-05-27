@@ -86,7 +86,7 @@ def main():
         val_loss = val_loss / len(test_loader)
         val_accu = val_accu / test_data_len
 
-        if epoch % 10 == 0:
+        if epoch % 10 == 0 or epoch == args.epoch-1:
             torch.save(model.state_dict(),
                         f'./Weight/VGG_{args.version}_{args.optimizer}_{args.learning_rate}_{args.weight_decay}_{args.epoch}_{args.model_seed}_{epoch+1}.pth')
 
