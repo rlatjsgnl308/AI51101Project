@@ -82,7 +82,7 @@ for seed in "${model_seeds[@]}"; do
     for optimizer in "${optimizers[@]}"; do
         for wd in "${weight_decays[@]}"; do
             adjusted_wd=$(convert_weight_decay $wd)
-            run_vae_fashion_mnist $seed 0.0001 $adjusted_wd $optimizer 1 "train"
+            run_vae_fashion_mnist $seed 0.0001 $adjusted_wd $optimizer 25 "train"
         done
     done
 done

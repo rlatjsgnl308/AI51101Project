@@ -92,7 +92,7 @@ def main():
             val_recon_loss += recon_loss
             val_KL_loss += KL_loss
 
-            if epoch % 10 == 0 and idx == 0:
+            if (epoch % 5 == 0 or epoch == args.epoch-1) and idx == 0:
                 num_samples = min(args.batch_size, 16)
 
                 input = sample[0].to(device)
