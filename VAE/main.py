@@ -104,11 +104,11 @@ def main():
                     f'./ReconResults/VAE_{args.version}_{args.optimizer}_{args.learning_rate}_{args.weight_decay}_{args.epoch}_{args.model_seed}_{epoch+1}.png',
                     n_row=4)
 
-        val_total_loss = val_total_loss / len(train_loader)
-        val_recon_loss = val_recon_loss / len(train_loader)
-        val_KL_loss = val_KL_loss / len(train_loader)
+        val_total_loss = val_total_loss / len(test_loader)
+        val_recon_loss = val_recon_loss / len(test_loader)
+        val_KL_loss = val_KL_loss / len(test_loader)
 
-        if epoch % 10 == 0:
+        if epoch % 5 == 0 or epoch == args.epoch-1:
             torch.save(model.state_dict(),
                        f'./Weight/VAE_{args.version}_{args.optimizer}_{args.learning_rate}_{args.weight_decay}_{args.epoch}_{args.model_seed}_{epoch+1}.pth')
 

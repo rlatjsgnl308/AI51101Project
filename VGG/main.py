@@ -86,9 +86,8 @@ def main():
         val_loss = val_loss / len(test_loader)
         val_accu = val_accu / test_data_len
 
-        if epoch % 10 == 0:
-            torch.save(model.state_dict(),
-                        f'./Weight/VGG_{args.version}_{args.optimizer}_{args.learning_rate}_{args.weight_decay}_{args.epoch}_{args.model_seed}_{epoch+1}.pth')
+        torch.save(model.state_dict(),
+                   f'./Weight/VGG_{args.version}_{args.optimizer}_{args.learning_rate}_{args.weight_decay}_{args.epoch}_{args.model_seed}.pth')
 
         f.write('[epoch {}] train_loss : {:.4f}, train accu : {:.4f} , val_loss : {:.4f}, val accu : {:.4f}\n' \
               .format(epoch + 1, train_loss, train_accu, val_loss, val_accu))
