@@ -12,7 +12,8 @@ vae_dir="./VAE"
 
 # To prevent weight_decay becomes 0
 convert_weight_decay() {
-    echo "scale=10; $1 * 0.001" | bc
+    adjusted_wd=$(awk "BEGIN {printf \"%.10f\", $wd * 0.001}")
+    echo $adjusted_wd
 }
 
 # Function to run VGG + CIFAR 10 experiment
