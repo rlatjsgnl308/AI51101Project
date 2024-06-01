@@ -40,7 +40,7 @@ pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --e
 ```
 Or you can download any proper [version](https://pytorch.org/get-started/previous-versions/).
 
-## Testing
+## Test
 
 To proceed above tests, run this command:
 
@@ -48,41 +48,47 @@ To proceed above tests, run this command:
 ./run.sh
 ```
 
+The bash file runs all tests sequentially. 
+
+The training process is stored in each txt file whose name format is '{model}_{test_name}_{optimizer}_{learning_rate}_{weight_decay_rate}_{epoch}_{seed}.txt'. Each trained weight is stored at the last train epoch for each learning rate and weight decay rate combination. Its name format is same with txt file, but the extension is '.pth'. There should be folders to contains each txt and pth file for each task (,or model) folder. Each txt file will be saved in 'Stats', and pth file in 'Weight'. 
+-> Check reconresults part is well removed.
+
+For the image classification task, each txt file consists of train loss, train accuracy, test loss, and test accuracy.
+For the image generation, each txt file consists of total train loss, reconstruction train loss, KL divergence train loss, and corresponding test statistics, because these loss terms are important to analyze VAE training. The total loss means reconstruction loss + KL loss.
+
 Additionally, in run.sh file, hyperparameters, including batch size, epoch, model seeds and designated learning rate and weight decay rate, can be adjusted.
 
-## Visualizeion
+## Visualization
 
-Visualization folder contains files to visualize obtained results
+Visualization folder contains files to visualize obtained results. 
 
-* Visualize VGG grid test
+If there are multiple trials with various model seed, this code averages all the results. 
+
+Because qualitative results are also important for image generation tasks, '', '' draws sampled images with various learning rate and weight decay rate. 
+
+* Visualize VGG test (First : Grid, Second : Training)
 
 ```bash
 python3 
 ```
-
-* Visualize VGG training test
 ```bash
 python3 
 ```
 
-* Visualize VAE grid test
+* Visualize VAE test (First : Grid, Second : Training)
+```bash
+python3
+```
 ```bash
 python3
 ```
 
-* Visualize VAE grid test qualitatively
+* Visualize VAE test qualitatively (First : Grid, Second : Training)
 ```bash
 python3
 ```
-
-* Visualize VAE training test
 ```bash
-python3 
-```
-
-* Visualize VAE training test qualitatively
-```bash
-python3 
+python3
 ```
 
 ## Results
