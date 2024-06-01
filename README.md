@@ -32,12 +32,13 @@ For these two test, this code expeiments two tasks
 
 * pytorch >= 1.11.0
 * torchvision >= 0.12.0
+  
 To install requirements, 
 
 ```setup
 pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
 ```
-Or you can download any proper (version)[https://pytorch.org/get-started/previous-versions/].
+Or you can download any proper [version](https://pytorch.org/get-started/previous-versions/).
 
 ## Testing
 
