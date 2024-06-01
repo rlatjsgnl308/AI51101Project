@@ -48,7 +48,7 @@ To proceed above tests, run this command:
 ./run.sh
 ```
 
-The bash file runs all tests sequentially. 
+The bash file runs all tests sequentially. However, because each task is totally seperable with independent loop and functions, indicated by comments, one can extract some desirable tests, or run each test in a parallel way.
 
 The training process is stored in each txt file whose name format is '{model}_{test_name}_{optimizer}_{learning_rate}_{weight_decay_rate}_{epoch}_{seed}.txt'. Each trained weight is stored at the last train epoch for each learning rate and weight decay rate combination. Its name format is same with txt file, but the extension is '.pth'. There should be folders to contains each txt and pth file for each task (,or model) folder. Each txt file will be saved in 'Stats', and pth file in 'Weight'. 
 -> Check reconresults part is well removed.
