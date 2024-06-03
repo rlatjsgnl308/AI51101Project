@@ -92,23 +92,11 @@ def main():
             val_recon_loss += recon_loss
             val_KL_loss += KL_loss
 
-            if (epoch % 5 == 0 or epoch == args.epoch-1) and idx == 0:
-                num_samples = min(args.batch_size, 16)
-
-                input = sample[0].to(device)
-                compare_pics = torch.cat(
-                    [input[:num_samples//2], x_recon.view(args.batch_size, 1, 28, 28)[:num_samples//2],
-                     input[num_samples//2:num_samples], x_recon.view(args.batch_size, 1, 28, 28)[num_samples//2:num_samples]]).cpu()
-                save_image(
-                    compare_pics,
-                    f'./ReconResults/VAE_{args.version}_{args.optimizer}_{args.learning_rate}_{args.weight_decay}_{args.epoch}_{args.model_seed}_{epoch+1}.png',
-                    n_row=4)
-
         val_total_loss = val_total_loss / len(test_loader)
         val_recon_loss = val_recon_loss / len(test_loader)
         val_KL_loss = val_KL_loss / len(test_loader)
 
-        if epoch % 5 == 0 or epoch == args.epoch-1:
+        if epoch == args.epoch-1:
             torch.save(model.state_dict(),
                        f'./Weight/VAE_{args.version}_{args.optimizer}_{args.learning_rate}_{args.weight_decay}_{args.epoch}_{args.model_seed}_{epoch+1}.pth')
 
