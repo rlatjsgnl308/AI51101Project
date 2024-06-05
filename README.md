@@ -66,44 +66,35 @@ If there are multiple trials with various model seed, this code averages all the
 
 Because qualitative results are also important for image generation tasks, '', '' draws sampled images with various learning rate and weight decay rate. 
 
+It is highly recommanded to run these commands in the Visualization folder.
+
 * Visualize VGG test (First : Grid, Second : Training)
 
 ```bash
 python3 
 ```
 ```bash
-python3 
+python3 VGG_train_stats.py
 ```
 
 * Visualize VAE test (First : Grid, Second : Training)
 ```bash
-python3
+python3 VAE_grid_stats.py
 ```
 ```bash
-python3
+python3 VAE_train_stats.py
 ```
 
 * Visualize VAE test qualitatively (First : Grid, Second : Training)
 ```bash
-python3
+python3 VAE_grid_image.py
 ```
 ```bash
-python3
+python3 VAE_train_image.py
 ```
 
 ## Results
 
-Our model achieves the following performance on :
+The result figures are in the Visualization folder.
 
-### [Image Classification on ImageNet](https://paperswithcode.com/sota/image-classification-on-imagenet)
-
-| Model name         | Top 1 Accuracy  | Top 5 Accuracy |
-| ------------------ |---------------- | -------------- |
-| My awesome model   |     85%         |      95%       |
-
->📋  Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. 
-
-
-## Contributing
-
->📋  Pick a licence and describe how to contribute to your code repository. 
+## Conclusion
