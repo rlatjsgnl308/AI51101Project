@@ -46,7 +46,7 @@ def get_wd_index(wd):
 # Process each file in the directory
 for optimizer in optimizers:
     for filename in os.listdir(stats_dir):
-        if filename.startswith(f'VGG_train_{optimizer}'):
+        if filename.startswith(f'VGG_train_{optimizer}_'):
             filepath = os.path.join(stats_dir, filename)
             match = filename_pattern.match(filename)
             if match:
@@ -96,7 +96,7 @@ fig, axes = plt.subplots(2, 2, figsize=(15, 15))
 fig.suptitle('Training test statistics')
 
 colors = {'Adam': 'red', 'AdamW': 'blue'}
-transparency_levels = np.linspace(1, 0.3, len(weight_decays))
+transparency_levels = np.linspace(1, 0.1, len(weight_decays))
 
 for wd_idx, wd in enumerate(weight_decays):
     for optimizer in optimizers:
