@@ -1,6 +1,6 @@
 #  Comparison between Adam amd AdamW in simple tasks
 
-This repository compares two optimizer, Adam and AdamW, based on pytorch implementations.
+This repository compares two optimizers, Adam and AdamW, based on pytorch implementations.
 
 For comparison, this code conducts two tests:
 
@@ -12,11 +12,11 @@ For comparison, this code conducts two tests:
     
 * Training test
 
-  * With a fixed learning rate, a model is trained with both Adam and AdamW under various weight decay rate setting
+  * With a fixed learning rate, a model is trained with both Adam and AdamW under various weight decay rate settings
   * The fixed learing rate = 0.0001
   * weight decay rate : same with the grid test
 
-For these two test, this code expeiments two tasks
+For these two tests, this code expeiments two tasks. 
 
 * Image classification
 
@@ -27,6 +27,8 @@ For these two test, this code expeiments two tasks
 
   * Model : [VAE](https://github.com/ANLGBOY/VAE-with-PyTorch) with dense layers
   * Dataset : [Fashion MNIST](https://pytorch.org/vision/stable/generated/torchvision.datasets.FashionMNIST.html)
+
+Each hyperlink gives where the implementation is from.
 
 ## Requirements
 
@@ -60,7 +62,7 @@ For the image classification task, each txt file consists of train loss, train a
 
 For the image generation, each txt file consists of total train loss, reconstruction train loss, KL divergence train loss, and corresponding test statistics. The total loss means reconstruction loss + KL loss.
 
-Additionally, in run.sh file, hyperparameters, including batch size, epoch, model seeds and designated learning rate and weight decay rate, can be adjusted.
+Additionally, in run.sh file, hyperparameters, including batch size, epoch, model seeds and the designated learning rate and weight decay rate set, can be adjusted.
 
 ## Visualization
 
