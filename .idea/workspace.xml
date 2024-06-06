@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fecd111c-fafc-485a-b315-f44e30e29be2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI51101_FinalProject.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/AI51101_FinalProject.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VGG/Dataloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/VGG/Dataloader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Visualization/VAE_grid_stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/Visualization/VAE_grid_stats.py" afterDir="false" />
@@ -73,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716533494947</updated>
       <workItem from="1716533503115" duration="21608000" />
-      <workItem from="1716566726048" duration="107437000" />
+      <workItem from="1716566726048" duration="116212000" />
     </task>
     <servers />
   </component>
