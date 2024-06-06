@@ -6,6 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="fecd111c-fafc-485a-b315-f44e30e29be2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VGG/Dataloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/VGG/Dataloader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visualization/VAE_grid_stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/Visualization/VAE_grid_stats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visualization/VAE_grid_test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visualization/VAE_grid_test_images_Adam.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visualization/VAE_grid_test_images_AdamW.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visualization/VAE_training_test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visualization/VAE_training_test_at_the_end.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visualization/VAE_training_test_images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visualization/VGG_training_test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visualization/VGG_training_test_at_overfit.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,16 +46,21 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/sunhwikim/Desktop/AI51101Project",
+    "last_opened_file_path": "/home/sunhwikim/Desktop/EEE634_HW1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/" />
     </key>
   </component>
@@ -57,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716533494947</updated>
       <workItem from="1716533503115" duration="21608000" />
-      <workItem from="1716566726048" duration="2087000" />
+      <workItem from="1716566726048" duration="107437000" />
     </task>
     <servers />
   </component>
