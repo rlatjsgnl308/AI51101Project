@@ -123,4 +123,6 @@ The overfit situation doesn't change the parameter dependency which Adam shows.
 
 If the training itself includes regularization (not L2 regularization) such as VAE, Adam becomes less sensitive to the weight decay rate change.
 
+In spite of almost no correlation between learning rate and weight decay rate, AdamW is more sensitive to the learning rate change itself than Adam.
+
 Detailed explanation is on report pdf.
